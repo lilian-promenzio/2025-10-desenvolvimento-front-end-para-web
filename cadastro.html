@@ -9,6 +9,11 @@
 			content="Cadastre-se para ser um voluntário ou para receber novidades da ONG Patas Amigas."
 		/>
 		<link rel="stylesheet" href="./styles/global.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="./styles/pagina-cadastro.css"
+			type="text/css"
+		/>
 	</head>
 	<body class="layout-principal">
 		<header class="layout-header">
@@ -60,7 +65,7 @@
 					class="form"
 				>
 					<div class="grid">
-						<fieldset class="form-fieldset col-md-6">
+						<fieldset class="form-fieldset col-12 col-md-6">
 							<legend>Informações Pessoais</legend>
 							<div class="form-item">
 								<label for="nome">Nome Completo *</label>
@@ -116,7 +121,7 @@
 							</div>
 						</fieldset>
 
-						<fieldset class="form-fieldset col-md-6">
+						<fieldset class="form-fieldset col-12 col-md-6">
 							<legend>Endereço</legend>
 							<div class="form-item">
 								<label for="cep">CEP *</label>
@@ -174,6 +179,15 @@
 					</div>
 					<button type="submit" class="botao">Enviar Cadastro</button>
 				</form>
+			</section>
+
+			<section class="secao container">
+				<h2 class="titulo-secao">Voluntários Cadastrados</h2>
+				<div id="tabelaVoluntarios" class="tabela-voluntarios-wrapper">
+					<p class="tabela-vazia-message">
+						Não há nenhum voluntário cadastrado :(
+					</p>
+				</div>
 			</section>
 
 			<section>
