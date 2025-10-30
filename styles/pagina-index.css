@@ -1,0 +1,24 @@
+.secao-contato {
+	color: var(--color-light);
+	background-color: var(--color-secondary);
+}
+
+.hero-conteudo {
+	z-index: 2;
+	position: relative;
+	text-align: center;
+	color: #fff;
+}
+
+.hero-conteudo p {
+	margin: var(--spacing-xs) 0 var(--spacing-lg);
+	font-size: var(--font-size-xl);
+	font-weight: 700;
+}
+
+.secao-sobre {
+	@media (min-width: 992px) {
+		padding-top: 140px;
+		padding-bottom: 140px;
+	}
+}
