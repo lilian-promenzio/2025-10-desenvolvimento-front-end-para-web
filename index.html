@@ -8,95 +8,123 @@
 			name="description"
 			content="ONG Patas Amigas, dedicada ao cuidado e bem-estar de animais. Saiba mais sobre nosso trabalho e como você pode ajudar."
 		/>
+		<link rel="stylesheet" href="./styles/global.css" type="text/css" />
+		<link
+			rel="stylesheet"
+			href="./styles/pagina-index.css"
+			type="text/css"
+		/>
 	</head>
-	<body>
-		<header>
-			<h1>ONG Patas Amigas</h1>
-			<nav>
+
+	<body class="layout-principal">
+		<header class="layout-header">
+			<img src="./imagens/logo.png" alt="Logo da ONG" />
+			<nav id="menuPrincipal" class="menu-principal menu-desktop">
 				<ul>
 					<li>
 						<a href="./index.html">Início</a>
-						<ul>
+						<ul class="menu-principal__submenu">
 							<li><a href="./index.html#sobre">Sobre</a></li>
 							<li><a href="./index.html#contato">Contato</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="./projetos.html">Projetos</a>
-
-						<ul>
-							<li>
-								<a href="./projetos.html#voluntariado"
-									>Voluntariado</a
-								>
-							</li>
-							<li>
-								<a href="./projetos.html#doacoes">Doações</a>
-							</li>
-						</ul>
 					</li>
-					<li><a href="./cadastro.html">Cadastro</a></li>
+					<li><a href="./cadastro.html">Seja Voluntário</a></li>
 				</ul>
 			</nav>
+
+			<button id="botaoMenuMobile" class="botao-menu-mobile">☰</button>
+			<div id="menuOverlay" class="menu-overlay"></div>
 		</header>
 
 		<main>
-			<section id="sobre">
-				<h2>Sobre Nossa Organização</h2>
-				<article>
-					<h3>Nossa Missão</h3>
-					<figure>
-						<img
-							src="./imagens/inicio.jpg"
-							alt="Cachorros da ONG"
-							style="width: 100%"
-							loading="lazy"
-						/>
-						<figcaption>
-							Créditos:
-							<a href="http://www.freepik.com"
-								>Designed by rawpixel.com / Freepik</a
-							>
-						</figcaption>
-					</figure>
-					<p>
-						A Patas Amigas é uma organização não governamental
-						dedicada a resgatar, cuidar e encontrar lares amorosos
-						para animais em situação de risco. Acreditamos que todo
-						animal merece uma vida com dignidade, amor e segurança.
-					</p>
-				</article>
-				<article>
-					<h3>Nossa História</h3>
-					<p>
-						Fundada em 2010 por um grupo de amigos apaixonados por
-						animais, a Patas Amigas começou como um pequeno abrigo e
-						hoje já ajudou a mudar a vida de milhares de animais.
-						Nosso trabalho é mantido por voluntários e doações de
-						pessoas que compartilham do nosso amor pela causa.
-					</p>
-				</article>
+			<section class="hero">
+				<div class="hero-conteudo">
+					<h1 class="titulo-pagina">ONG Patas Amigas</h1>
+
+					<p>Faça a diferença, seja um voluntário!</p>
+
+					<a href="./cadastro.html" class="link-destaque"
+						>Me inscrever</a
+					>
+				</div>
 			</section>
 
-			<section id="contato">
-				<h2>Informações de Contato</h2>
-				<p>
-					Entre em contato conosco para mais informações, parcerias ou
-					para agendar uma visita.
-				</p>
-				<ul>
-					<li><strong>E-mail:</strong> contato@patasamigas.org</li>
-					<li><strong>Telefone:</strong> (11) 99999-9999</li>
-					<li>
-						<strong>Endereço:</strong> Rua dos Animais Felizes, 123,
-						São Paulo - SP
-					</li>
-				</ul>
+			<section
+				id="sobre"
+				class="container grid secao secao-sobre align-items-strech"
+			>
+				<div class="col-12 col-sm-6">
+					<article class="card full-height">
+						<h2 class="titulo-secao">Nossa Missão</h2>
+						<p>
+							A Patas Amigas é uma organização não governamental
+							dedicada a resgatar, cuidar e encontrar lares
+							amorosos para animais em situação de risco.
+							Acreditamos que todo animal merece uma vida com
+							dignidade, amor e segurança.
+						</p>
+					</article>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<article class="card full-height">
+						<h2 class="titulo-secao">Nossa História</h2>
+						<p>
+							Fundada em 2010 por um grupo de amigos apaixonados
+							por animais, a Patas Amigas começou como um pequeno
+							abrigo e hoje já ajudou a mudar a vida de milhares
+							de animais. Nosso trabalho é mantido por voluntários
+							e doações de pessoas que compartilham do nosso amor
+							pela causa.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<section>
+				<figure>
+					<figcaption>
+						Créditos:
+						<a href="http://www.freepik.com"
+							>Designed by rawpixel.com / Freepik</a
+						>
+					</figcaption>
+					<img
+						src="./imagens/inicio.jpg"
+						alt="Cachorros da ONG"
+						style="width: 100%"
+						loading="lazy"
+					/>
+				</figure>
+			</section>
+
+			<section id="contato" class="secao secao-contato">
+				<div class="container">
+					<h2 class="titulo-secao">Informações de Contato</h2>
+					<p>
+						Entre em contato conosco para mais informações,
+						parcerias ou para agendar uma visita.
+					</p>
+					<ul>
+						<li>
+							<strong>E-mail:</strong> contato@patasamigas.org
+						</li>
+						<li><strong>Telefone:</strong> (11) 99999-9999</li>
+						<li>
+							<strong>Endereço:</strong> Rua dos Animais Felizes,
+							123, São Paulo - SP
+						</li>
+					</ul>
+				</div>
 			</section>
 		</main>
 
-		<footer>
+		<footer class="layout-footer">
 			<p>&copy; 2025 ONG Patas Amigas. Todos os direitos reservados.</p>
 		</footer>
+		<script src="./scripts/main.js"></script>
 	</body>
 </html>

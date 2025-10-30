@@ -1,0 +1,32 @@
+p {
+	margin: 0;
+}
+
+p + p {
+	margin-top: 1rem;
+	margin-top: 1lh;
+}
+
+.titulo-pagina {
+	margin: 0;
+	line-height: 1;
+	font-size: 3rem;
+	font-weight: 900;
+	text-shadow: -3px -3px 0 var(--color-secondary),
+		3px -3px 0 var(--color-secondary), -3px 3px 0 var(--color-secondary),
+		3px 3px 0 var(--color-secondary);
+	color: var(--color-secondary-light);
+
+	@media (min-width: 576px) {
+		font-size: 4rem;
+	}
+}
+
+.titulo-secao {
+	margin: 0;
+	margin-bottom: var(--spacing-md);
+	line-height: 1;
+	font-size: var(--font-size-xl);
+	font-weight: 700;
+	color: var(--color-secondary);
+}
