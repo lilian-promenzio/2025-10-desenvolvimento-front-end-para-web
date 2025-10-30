@@ -1,0 +1,28 @@
+.tabela-voluntarios-wrapper {
+	overflow: auto;
+	width: 100%;
+	padding-bottom: var(--spacing-lg);
+}
+
+.tabela-voluntarios-wrapper table {
+	width: 100%;
+
+	th,
+	td {
+		border-color: var(--color-secondary);
+		white-space: nowrap;
+	}
+
+	th {
+		color: var(--color-light);
+		background-color: var(--color-primary);
+	}
+
+	tr:nth-child(odd) {
+		background-color: var(--color-primary-light);
+	}
+}
+
+.tabela-vazia-message {
+	text-align: center;
+}

@@ -88,6 +88,9 @@ function cadastroHandleSubmit(event) {
 		if (successMessage) successMessage.classList.remove("show");
 		form.dataset.submitting = "false";
 	}, 5000);
+
+	// Atualiza tabela de cadastros
+	exibirCadastros();
 }
 
 /**
@@ -134,6 +137,39 @@ function cepMask(value) {
 		value = value.substring(0, 9);
 	}
 	return value;
+}
+
+/**
+ * Exibir cadastros
+ */
+function exibirCadastros() {
+	const voluntarios = JSON.parse(localStorage.getItem("voluntarios") || "[]");
+	const tabelaContainer = document.getElementById("tabelaVoluntarios");
+
+	if (!tabelaContainer) return;
+
+	if (voluntarios.length === 0) {
+		tabelaContainer.innerHTML =
+			"<p>Nenhum voluntário cadastrado ainda.</p>";
+		return;
+	}
+
+	let html = '<table border="1" cellpadding="5" cellspacing="0">';
+	html +=
+		"<tr><th>Nome</th><th>E-mail</th><th>Telefone</th><th>Data de Nascimento</th><th>Data Cadastro</th></tr>";
+
+	voluntarios.forEach((v) => {
+		html += `<tr>
+            <td>${v.nome}</td>
+            <td>${v.email}</td>
+            <td>${v.telefone}</td>
+            <td>${v.nascimento}</td>
+            <td>${v.dataCadastro}</td>
+        </tr>`;
+	});
+
+	html += "</table>";
+	tabelaContainer.innerHTML = html;
 }
 
 /**
@@ -190,4 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			event.target.value = cepMask(event.target.value);
 		});
 	}
+
+	// Carrega cadastros
+	exibirCadastros();
 });
