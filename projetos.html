@@ -8,105 +8,106 @@
 			name="description"
 			content="Conheça nossos projetos, saiba como ser um voluntário ou como fazer uma doação para a ONG Patas Amigas."
 		/>
+		<link rel="stylesheet" href="./styles/global.css" type="text/css" />
 	</head>
-	<body>
-		<header>
-			<h1>ONG Patas Amigas</h1>
-			<nav>
+	<body class="layout-principal">
+		<header class="layout-header">
+			<img src="./imagens/logo.png" alt="Logo da ONG" />
+			<nav id="menuPrincipal" class="menu-principal menu-desktop">
 				<ul>
 					<li>
 						<a href="./index.html">Início</a>
-						<ul>
+						<ul class="menu-principal__submenu">
 							<li><a href="./index.html#sobre">Sobre</a></li>
 							<li><a href="./index.html#contato">Contato</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="./projetos.html">Projetos</a>
-
-						<ul>
-							<li>
-								<a href="./projetos.html#voluntariado"
-									>Voluntariado</a
-								>
-							</li>
-							<li>
-								<a href="./projetos.html#doacoes">Doações</a>
-							</li>
-						</ul>
 					</li>
-					<li><a href="./cadastro.html">Cadastro</a></li>
+					<li><a href="./cadastro.html">Seja Voluntário</a></li>
 				</ul>
 			</nav>
+
+			<button id="botaoMenuMobile" class="botao-menu-mobile">☰</button>
+			<div id="menuOverlay" class="menu-overlay"></div>
 		</header>
 
 		<main>
-			<section id="voluntariado">
-				<h2>Seja um Voluntário</h2>
-				<figure>
-					<img
-						src="./imagens/projetos.jpg"
-						alt="Voluntária cuidando de um filhote."
-						style="width: 100%"
-						loading="lazy"
-					/>
-					<figcaption>
-						Créditos:
-						<a href="http://www.freepik.com"
-							>Designed by rawpixel.com / Freepik</a
-						>
-					</figcaption>
-				</figure>
-				<p>
-					O trabalho voluntário é a força que move a Patas Amigas.
-					Você pode nos ajudar de diversas formas, como cuidando dos
-					animais, limpando os abrigos, participando de feiras de
-					adoção ou oferecendo seu conhecimento profissional em áreas
-					como veterinária, marketing e gestão.
-				</p>
-				<p>
-					Para ser um voluntário, preencha nosso formulário de
-					cadastro e aguarde nosso contato.
-				</p>
+			<section class="hero hero--small">
+				<div class="hero-conteudo">
+					<h1 class="titulo-pagina">Nossos Projetos</h1>
+				</div>
 			</section>
 
-			<section id="doacoes">
-				<h2>Como Doar</h2>
-				<p>
-					Sua doação é fundamental para mantermos nosso trabalho. Com
-					ela, conseguimos comprar ração, medicamentos, pagar por
-					tratamentos veterinários e manter a estrutura do nosso
-					abrigo.
-				</p>
-				<article>
-					<h3>Doação Financeira</h3>
-					<p>
-						Você pode doar qualquer valor através da nossa chave PIX
-						ou por transferência bancária.
-					</p>
-					<ul>
-						<li>
-							<strong>Chave PIX (CNPJ):</strong>
-							99.999.999/0001-99
-						</li>
-						<li><strong>Banco:</strong> Banco Animal S.A.</li>
-						<li><strong>Agência:</strong> 0001</li>
-						<li><strong>Conta Corrente:</strong> 12345-6</li>
-					</ul>
-				</article>
-				<article>
-					<h3>Doação de Suprimentos</h3>
-					<p>
-						Aceitamos doações de ração, areia para gatos,
-						medicamentos, cobertores e brinquedos. Entre em contato
-						para combinar a entrega.
-					</p>
-				</article>
+			<section id="projetos" class="container grid secao">
+				<div class="col-12 col-lg-6">
+					<article class="artigo">
+						<h2 class="titulo-secao">
+							Resgate e Reabilitação de Animais Abandonados
+						</h2>
+						<p>
+							Este projeto foca no resgate de animais em situação
+							de rua, oferecendo-lhes cuidados veterinários
+							essenciais, alimentação, abrigo e carinho. Após a
+							recuperação, os animais são preparados para adoção
+							responsável, garantindo que encontrem lares seguros
+							e amorosos.
+						</p>
+					</article>
+					<hr class="divider" />
+					<article class="artigo">
+						<h2 class="titulo-secao">
+							Programa de Conscientização e Educação Comunitária
+						</h2>
+						<p>
+							Através de palestras, workshops e campanhas em
+							escolas e comunidades, este programa visa educar
+							sobre a guarda responsável de animais, a importância
+							da castração, vacinação e os direitos dos animais.
+							Nosso objetivo é construir uma comunidade mais
+							empática e informada.
+						</p>
+					</article>
+					<hr class="divider" />
+					<article class="artigo">
+						<h2 class="titulo-secao">
+							Banco de Ração e Suprimentos
+						</h2>
+						<p>
+							Criamos um banco de ração e suprimentos para apoiar
+							tutores de baixa renda e abrigos parceiros.
+							Recebemos doações de alimentos, medicamentos,
+							cobertores e outros itens essenciais,
+							distribuindo-os para garantir o bem-estar de
+							milhares de animais que necessitam de assistência
+							contínua.
+						</p>
+					</article>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<figure>
+						<img
+							src="./imagens/projetos.jpg"
+							alt="Voluntária cuidando de um filhote."
+							style="width: 100%"
+							loading="lazy"
+						/>
+						<figcaption>
+							Créditos:
+							<a href="http://www.freepik.com"
+								>Designed by rawpixel.com / Freepik</a
+							>
+						</figcaption>
+					</figure>
+				</div>
 			</section>
 		</main>
 
-		<footer>
+		<footer class="layout-footer">
 			<p>&copy; 2025 ONG Patas Amigas. Todos os direitos reservados.</p>
 		</footer>
+		<script src="./scripts/main.js"></script>
 	</body>
 </html>

@@ -189,6 +189,14 @@
 	padding: var(--spacing-xl) 0;
 }
 
+.artigo {
+	padding: var(--spacing-lg) 0;
+}
+
+.divider {
+	color: var(--color-grey-light);
+}
+
 /* SISTEMA DE GRID 12 COLS */
 .container {
 	box-sizing: border-box;
