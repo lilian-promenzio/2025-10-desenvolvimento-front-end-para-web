@@ -8,8 +8,8 @@
 	--color-primary-light: #efe5f7;
 	--color-secondary: #d10092;
 	--color-secondary-light: #f7e5f6;
-	--color-success: #00cf4f;
-	--color-danger: #cf4f00;
+	--color-success: #008b7a;
+	--color-danger: #a70000;
 	--color-warning: #ffc107;
 	--color-light: #fff;
 	--color-dark: #232323;
@@ -19,7 +19,7 @@
 	--font-size-xs: 0.65rem;
 	--font-size-sm: 0.75rem;
 	--font-size-md: 1rem;
-	--font-size-lg: 1.75rem;
+	--font-size-lg: 1.5rem;
 	--font-size-xl: 2.15rem;
 
 	--spacing-xs: 8px;

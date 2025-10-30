@@ -112,6 +112,25 @@
 	border: none;
 	cursor: pointer;
 	transition: 0.15s;
+
+	&:hover {
+		color: var(--color-secondary);
+	}
+
+	&:focus {
+		transform: scale(1.15);
+	}
+
+	&:active {
+		color: var(--color-secondary);
+		transform: scale(1.15);
+	}
+
+	&:disabled {
+		color: var(--color-grey);
+		opacity: 0.5;
+		cursor: default;
+	}
 }
 
 @media (min-width: 576px) {
