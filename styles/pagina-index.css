@@ -1,6 +1,6 @@
 .secao-contato {
-	color: var(--color-light);
-	background-color: var(--color-secondary);
+	color: var(--color-dark);
+	background-color: var(--color-primary-light);
 }
 
 .hero-conteudo {
