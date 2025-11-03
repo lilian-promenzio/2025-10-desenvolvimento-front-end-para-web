@@ -31,6 +31,9 @@ Para visualizar o projeto localmente, siga os passos abaixo:
 3.  **Abra os arquivos HTML no seu navegador:**
     Você pode abrir `index.html`, `projetos.html` ou `cadastro.html` diretamente no seu navegador.
 
+## Link publicado
+https://magical-pegasus-c1469f.netlify.app/
+
 ## Estrutura do Projeto
 
 ```
